@@ -1,4 +1,4 @@
-package edu.stanford.bmir.protege.examples.tab;
+package edu.uiz.fsa.protege.SQLfplugin.tab;
 
 import org.protege.editor.owl.ui.OWLWorkspaceViewsTab;
 import org.slf4j.Logger;
@@ -12,13 +12,13 @@ public class ExampleWorkspaceTab2 extends OWLWorkspaceViewsTab {
 		setToolTipText("Custom tooltip text for Example Tab (2)");
 	}
 
-    @Override
+   // @Override
 	public void initialise() {
 		super.initialise();
 		log.info("Example Workspace Tab (2) initialized");
 	}
 
-	@Override
+	//@Override
 	public void dispose() {
 		super.dispose();
 		log.info("Example Workspace Tab (2) disposed");

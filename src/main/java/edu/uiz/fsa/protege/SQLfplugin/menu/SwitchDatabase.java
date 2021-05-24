@@ -1,4 +1,4 @@
-package edu.stanford.bmir.protege.examples.menu;
+package edu.uiz.fsa.protege.SQLfplugin.menu;
 import java.awt.GridLayout;
 import javax.swing.*;
 
@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 import org.protege.editor.owl.ui.action.ProtegeOWLAction;
 
-public class DatabaseConnection extends ProtegeOWLAction {
+public class SwitchDatabase extends ProtegeOWLAction {
 
 	public void initialise() throws Exception {
 	}
@@ -55,5 +55,6 @@ public class DatabaseConnection extends ProtegeOWLAction {
     } else {
         System.out.println("Cancelled");
     }
+    
 	}
 }

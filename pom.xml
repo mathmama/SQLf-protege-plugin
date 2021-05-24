@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>edu.stanford.protege</groupId>
+	<groupId>uiz.fsa.protege</groupId>
 	<artifactId>SQLf</artifactId>
 	<version>1.0.0</version>
 	<packaging>bundle</packaging>
 
-	<name>SQLf</name>
+	<name>SQLf protege plugin</name>
 	<description>Example plug-ins for the Protege Desktop ontology editor, e.g., views, menu items, etc.</description>
 	
 	<properties>

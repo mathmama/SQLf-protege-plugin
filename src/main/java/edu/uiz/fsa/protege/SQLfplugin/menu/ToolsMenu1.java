@@ -1,4 +1,4 @@
-package edu.stanford.bmir.protege.examples.menu;
+package edu.uiz.fsa.protege.SQLfplugin.menu;
 
 import java.awt.event.ActionEvent;
 
