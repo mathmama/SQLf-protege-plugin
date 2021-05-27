@@ -1,8 +1,10 @@
 package edu.uiz.fsa.protege.SQLfplugin.menu;
 import java.awt.GridLayout;
+
 import javax.swing.*;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
@@ -27,9 +29,20 @@ public class DatabaseConnectionMenu extends ProtegeOWLAction {
     String[] items = {"localhost"};
     JComboBox database = new JComboBox(items);
     //JTextField database = new JTextField("localhost");
-    JTextField SID = new JTextField("orcl");
-    JTextField Port = new JTextField("1521");
-    JTextField JDBCURL = new JTextField("jdbc:oracle:thin:@localhost:1521:orcl");
+    final JTextField SID = new JTextField("orcl");
+    final JTextField Port = new JTextField("1521");
+    JCheckBox  JDBCURLenable= new JCheckBox("Enable");
+    final JTextField JDBCURL = new JTextField("jdbc:oracle:thin:@localhost:1521:orcl");
+    JDBCURL.setEditable(false);
+    JDBCURLenable.addActionListener(new ActionListener() {
+
+           // @Override
+            public void actionPerformed(ActionEvent e) {
+                SID.setEditable(false);
+                Port.setEditable(false);
+                JDBCURL.setEditable(true);
+            }
+        });
     JTextField UserName = new JTextField("");
     JTextField Password = new JPasswordField(10);
 
@@ -40,6 +53,7 @@ public class DatabaseConnectionMenu extends ProtegeOWLAction {
     panel.add(new JLabel("Port:"));
     panel.add(Port);
     panel.add(new JLabel("JDBC Url:"));
+    panel.add(JDBCURLenable);
     panel.add(JDBCURL);
     panel.add(new JLabel("User Name:"));
     panel.add(UserName);
